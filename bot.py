@@ -10,9 +10,8 @@ bot_twitter = twitter.Api(consumer_key="NZTVPmJ7u32rUNppF6dHNWWJW",
 
 # bot_twitter.PostUpdate('Hello world')
 since =  datetime.now().strftime('%Y-%m-%d')
-twitts = bot_twitter.GetSearch(term="fizzbuzz", since=since, result_type="recent")
+twitts = bot_twitter.GetSearch(term="fizzbuzzz1", since=since, result_type="recent")
 for twitt in twitts:
-    print(twitt)
     data_twitt = {
       'quote': twitt.text,
       'user':{
